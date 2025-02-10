@@ -4,13 +4,13 @@ sudo tcpdump port 22 -i any -G 600 -C 2 -w login.pcap
 
 
 
-Line 1, starts with SheBang
-Line 3, is tcpdump, using the port option, specifying port 22 which is the port used when SSHing.
--i option, then any is used to scan all interfaces for this script.
-Once again -G option, for 600 seconds, which is 10 minutes. Or -C option, 2, which is 2MB, or 2,000,000 bytes.
--w option, is used to write a file for the data packets captured to "login.pcap" file.
+#Line 1, starts with SheBang
+#Line 3, is tcpdump, using the port option, specifying port 22 which is the port used when SSHing.
+#-i option, then any is used to scan all interfaces for this script.
+#Once again -G option, for 600 seconds, which is 10 minutes. Or -C option, 2, which is 2MB, or 2,000,000 bytes.
+#-w option, is used to write a file for the data packets captured to "login.pcap" file.
 
-This is a basic tool written to capture SSH attempts if you think someone is trying to say backdoor your 
-workstation. This can be ran in the background.
-Also, hypothetical tests you can just try to "ssh localhost" to create your own packets to capture and examine the 
-pcap files.
+#This is a basic tool written to capture SSH attempts if you think someone is trying to say backdoor your 
+#workstation. This can be ran in the background.
+#Also, hypothetical tests you can just try to "ssh localhost" to create your own packets to capture and examine the 
+#pcap files.
